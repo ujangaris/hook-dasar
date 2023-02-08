@@ -41,3 +41,19 @@
 
         1.  fake api : json place holder
             link: https://jsonplaceholder.typicode.com/
+
+## update data dengan componentDidUpdate()
+
+    todo:
+
+        1.  src/2BelajarUseState/LifeCycle
+            - buat form didalamnya buat satu input dan button
+                pada input pasang event onChange() untuk  menampung value dan mencetak langsung dari inputan
+                pada form pasang method onSubmit() dan pasang method handleSubmit()
+            - buat function handleSubmit()
+                copy code untuk update api pada jsonplaceholder pasterkan didalam handleSubmit()
+            - componentDidMounth()
+                tambahkan property isUpdate:false
+            - pasang componentDidUpdate()
+                buat kondisi jika data berhasil di update akan menampilkan alert sukses
+                tampung state kedalam isUpdate
