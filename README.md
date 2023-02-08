@@ -17,3 +17,9 @@
         1.  src/component/Hitung.js
             membuat function component
         2.  jalankan server : npm start
+
+## Rapihkan folder
+
+    todo:
+        1.  folder component dan pages pindahkan kedalam folder 1BelajarUseState
+        2.  src/index.js arahkan import Hitung ke dalam path baru yang berada didalam folder 1BelajarUseState
