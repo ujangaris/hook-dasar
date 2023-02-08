@@ -1,6 +1,20 @@
+// rfc
+import React, { useState } from "react"
+
+export default function Hitung() {
+  const [jumlah, setJumlah] = useState(0)
+
+  return (
+    <div>
+      <p>Jumlah Pengunjung : {jumlah} Pengunjung</p>
+      <button onClick={() => setJumlah(jumlah + 1)}>Hitung</button>
+    </div>
+  )
+}
+
 // class component
 // rcc
-import React, { Component } from "react"
+/* import React, { Component } from "react"
 
 class Hitung extends Component {
   constructor(props) {
@@ -24,3 +38,4 @@ class Hitung extends Component {
 }
 
 export default Hitung
+ */
