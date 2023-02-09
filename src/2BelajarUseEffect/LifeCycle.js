@@ -12,7 +12,7 @@ class LifeCycle extends Component {
   }
   componentDidMount() {
     // get api dari fake api: jsonplaceholeder
-    fetch("https://jsonplaceholder.typicode.com/users/1")
+    fetch("https://jsonplaceholder.typicode.com/users/2")
       .then((response) => response.json())
       .then((json) => {
         this.setState({
