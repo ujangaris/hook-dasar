@@ -57,3 +57,17 @@
             - pasang componentDidUpdate()
                 buat kondisi jika data berhasil di update akan menampilkan alert sukses
                 tampung state kedalam isUpdate
+
+## penggunaan componentWillUnmount()
+
+    todo:
+
+        1.  src/2BelajarUseState/LifeCycle.js
+            memasang componentWillUnmount()
+        2   src/2BelajarUseState/index.js
+            - memasang constructor
+            - deklarasi isHide
+            - memasang button untuk menampilkan content dan menyembunyikan content
+        3.  pengujian pada browser:
+            - klik button sembunyikan , maka content akan menghilang
+            - klik button tampilkan, maka content akan tampil kembali

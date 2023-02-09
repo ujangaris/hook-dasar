@@ -61,6 +61,9 @@ class LifeCycle extends Component {
       })
     }
   }
+  componentWillUnmount() {
+    console.log("component di copot")
+  }
   render() {
     return (
       <div>
