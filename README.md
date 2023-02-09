@@ -71,3 +71,14 @@
         3.  pengujian pada browser:
             - klik button sembunyikan , maka content akan menghilang
             - klik button tampilkan, maka content akan tampil kembali
+
+## memasang componentDidMount dengan menggunakan useEffect()
+
+    todo:
+
+        1.  src/2BelajarUseState/LifeCycleFunc.js
+            - rfce : react functional component export
+            - membuat state
+            - membuat componentDidMount menggunakan useEffect
+            - didalam useEffect panggil get api dari fake api: jsonplaceholeder
+            - tampilkan satu data nama

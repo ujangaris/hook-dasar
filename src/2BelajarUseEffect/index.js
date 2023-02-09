@@ -1,6 +1,7 @@
 // rcc
 import React, { Component } from "react"
-import LifeCycle from "./LifeCycle"
+// import LifeCycle from "./LifeCycle"
+import LifeCycleFunc from "./LifeCycleFunc"
 
 class BelajarUseEffect extends Component {
   // rcon
@@ -19,14 +20,15 @@ class BelajarUseEffect extends Component {
       <div style={{ padding: "30px" }}>
         <h2>Contoh Lifecycle Component & useEffect</h2>
         <hr />
-        {/* memasang button untuk menampilkan content */}
+        {/* memasang button untuk menampilkan content dan menyembunyikan content */}
         {/* pada button Ini akan memanggil fungsi setState ketika tombol diklik, yang akan mengubah nilai isHide dalam state. */}
         <button onClick={() => this.setState({ isHide: !isHide })}>
           {/* jika isHide sama dengan true maka button tampilkan, jika false button sembunyikan */}
           {isHide ? "Tampilkan" : "Sembunyikan"}
         </button>
         {/* jika isHide bernilai true maka tampilkan */}
-        {!isHide && <LifeCycle />}
+        {/* {!isHide && <LifeCycle />} */}
+        {!isHide && <LifeCycleFunc />}
       </div>
     )
   }
