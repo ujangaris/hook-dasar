@@ -9,7 +9,7 @@ function LifeCycleFunc() {
   //   membuat componentDidMount menggunakan useEffect
   useEffect(() => {
     // get api dari fake api: jsonplaceholeder
-    fetch("https://jsonplaceholder.typicode.com/users/1")
+    fetch("https://jsonplaceholder.typicode.com/users/3")
       .then((response) => response.json())
       .then((json) => {
         // console.log("component did mount")
@@ -19,7 +19,7 @@ function LifeCycleFunc() {
   const handleSubmit = (event) => {
     event.preventDefault()
     // jalankan api update
-    fetch("https://jsonplaceholder.typicode.com/users/1", {
+    fetch("https://jsonplaceholder.typicode.com/users/3", {
       method: "PUT",
       body: JSON.stringify({
         id: 1,
@@ -45,14 +45,20 @@ function LifeCycleFunc() {
       setUpdate(false)
     }
   }, [isUpdate])
+  // component will unmount
+  useEffect(() => {
+    return () => {
+      console.log("component di copot")
+    }
+  }, [])
+
   return (
     <div>
       {/* tampilkan satu data nama */}
       <h3>Name :{name}</h3>
       <hr />
       <h3>Update Name </h3>
-      {/* 1 buat form untuk update data api */}
-      {/* 5 pasang method yang kita pasang kedalam onSubmit */}
+
       <form onSubmit={(event) => handleSubmit(event)}>
         <input
           type={"text"}

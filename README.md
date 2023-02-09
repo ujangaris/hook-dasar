@@ -82,3 +82,20 @@
             - membuat componentDidMount menggunakan useEffect
             - didalam useEffect panggil get api dari fake api: jsonplaceholeder
             - tampilkan satu data nama
+
+## memasang componentDidUpdate dengan menggunakan useEffect()
+
+    todo:
+
+        1.  src/2BelajarUseState/LifeCycleFunc.js
+            - membuat functioin handleSubmit()
+              copas dari handleSubmit class component kemudian modifikasi
+            - buat component did update dengan useEffect()
+              pada array [], isi  oleh state/ props yang akan berubah
+
+## memasang componentWillUnMount dengan menggunakan useEffect()
+
+    todo:
+
+        1.  src/2BelajarUseState/LifeCycleFunc.js
+            - lihat pada console.log('component di copot')
